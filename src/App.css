@@ -1,0 +1,43 @@
+body{
+    background-color:#ededed;
+}
+.App{
+    background-color:#cca7a7;
+    border-radius: 10px;
+    padding:10px;
+    margin: 20px 0px;
+}
+.job-dash{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.candidate-discoverirs{
+    background-color:#cca7a7;
+    border-radius: 10px;
+    padding:10px;
+   
+}
+.charts-visual{
+    display:flex;
+    justify-content: space-around;
+}
+.candidate-button {
+    padding: 10px 20px;
+    background-color: rgba(75, 192, 192, 0.6);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .candidate-button:hover {
+    background-color: #0056b3;
+  }
+
+  .candidate-card{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }

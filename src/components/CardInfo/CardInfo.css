@@ -1,0 +1,9 @@
+.deatils-card{
+    width: 280px;
+    height:auto;
+    padding: 10px;
+    background: linear-gradient(to right, #a6668c, #ffecec);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
