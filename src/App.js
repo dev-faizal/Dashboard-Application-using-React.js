@@ -23,7 +23,7 @@ const barData = {
       label: "Openings",
       data: requirmentData?.map((item) => item.numOfPositions),
       backgroundColor: requirmentData?.map((item) =>
-        item.status == "Active" ? "rgba(75, 192, 192, 0.6)" : "red"
+        item.status === "Active" ? "rgba(75, 192, 192, 0.6)" : "red"
       ),
     },
   ],
@@ -62,7 +62,7 @@ const App = () => {
     const FindOpenings = requirmentData.map((item) => item.numOfPositions);
     const total = FindOpenings.reduce((acc, cur) => +acc + +cur, 0);
     setTotalOpenings(total);
-  }, [requirmentData]);
+  }, [totalOpenings]);
 
   const cardData = [
     { title: "Offer Acceptance Rate", totalValue: "79%" },
@@ -75,10 +75,10 @@ const App = () => {
   const handledetails = (person) => {
     setShowCard(true);
     const filterReqCard = requirmentData.filter(
-      (item) => item.id == person.requirementId
+      (item) => item.id === person.requirementId
     );
     const filterCandidateCard = candiDateData.filter(
-      (item) => item.requirementId == person.requirementId
+      (item) => item.requirementId === person.requirementId
     );
     setSelectedCard([...filterReqCard, ...filterCandidateCard]);
   };
