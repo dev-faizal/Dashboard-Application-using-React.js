@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Table.css'
 
 
 const tableDataStyles = { border: "2px solid #ffd8d8", padding: "7px",cursor:'pointer' };
@@ -51,7 +51,7 @@ const Table = ({ data, tableHeadings,handledetails }) => {
               <td style={tableDataStyles}>{person.maxCTC || person.offeredCTC}</td>
               <td style={tableDataStyles}>{person.minCTC || person.discoveredOn}</td>
               <td style={tableDataStyles}>{person.numOfPositions || person.discoveredBy}</td>
-              <td style={tableDataStyles} onClick={()=>handleShowDetails(person)}>{person.status}</td>
+              <td className="text-status" onClick={()=>handleShowDetails(person)}>{person.status}</td>
             </tr>
           ))}
         </tbody>

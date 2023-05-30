@@ -1,0 +1,8 @@
+.text-status{
+    border: "2px solid #ffd8d8"; padding: "7px";cursor:'pointer';
+
+}
+.text-status:hover{
+    background-color: azure;
+    font-size:20px;
+}
